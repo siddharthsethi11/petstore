@@ -1,0 +1,34 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "petsotore",
+    "x-lastModified": "Dec 01, 2017 01:58AM PST"
+  },
+  "paths": {
+    "/id": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "the unique identifier",
+            "required": false,
+            "type": "integer",
+            "format": "int32",
+            "default": 11
+          }
+        ],
+        "operationId": "getId"
+      }
+    }
+  }
+}
